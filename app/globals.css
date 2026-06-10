@@ -19,6 +19,37 @@
   --animate-slide-right-r: slide-right-r 0.8s ease-in-out forwards;
   --animate-hidden: hidden-animate 1s ease-in-out;
   --animate-appears: appears-animate 1s ease-in-out;
+  --animate-image: image-animate 5s ease-in-out infinite;
+  --animate-reveal: reveal 0.8s ease-in-out forwards;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+
+  }
+}
+
+@keyframes image-animate {
+
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+
 }
 
 @keyframes appears-animate {
