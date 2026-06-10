@@ -21,9 +21,11 @@ const NavBar = () => {
     }
 
     return (
-        <div className="relative w-screen flex h-full">
-            <div className={"w-screen flex flex-row font-roboto border-b-2 border-fuchsia-600 p-2 bg-fuchsia-400"}>
-                <h1 className="flex-1 text-2xl pl-5 font-bold tracking-wider">Promotora Ellen</h1>
+        <div className="animate-appears relative w-screen flex h-full">
+            <div className={"w-screen flex flex-row font-roboto border-b-2 border-fuchsia-600 p-2 bg-fuchsia-400 items-center"}>
+                <h1 className="flex-1 text-2xl pl-5 font-bold tracking-wider">
+                    <a href="">Promotora Ellen</a>
+                </h1>
                 <Menu className="flex-none" onClick={handleMenu} />
             </div>
             <div className={"overflow-x-hidden absolute z-10 h-screen w-full flex justify-end backdrop-blur " + showMenu}>
