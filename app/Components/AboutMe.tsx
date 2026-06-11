@@ -1,34 +1,54 @@
-import { linkWpp } from "../Utils/links"
+import { linkInsta, linkWpp } from "../Utils/links"
 
 const AboutMe = () => {
     return (
-        <div id="sobre-mim" className="flex flex-col items-center mt-5 gap-5">
-            <h1 className="text-xl">Olá, sou <span className="text-fuchsia-800 font-black tracking-wide">Ellen Souza</span>
+        <div id="sobre-mim" className="flex flex-col justify-center items-center mt-5 gap-5">
+            <h1 className="text-xl reveal opacity-0">
+                Olá, sou <span className="text-fuchsia-800 font-black tracking-wide">Ellen Souza</span>
             </h1>
 
-            <img src="ellen-main3.jpg" className="rounded-full object-fit w-2/3 h-2/3 border-2 border-fuchsia-500 animate-image" />
+            {/* <img src="ellen-main3.jpg" className="rounded-full object-fit w-2/3 h-2/3 border-2 border-fuchsia-500 animate-image" /> */}
 
-            <h2 className="mt-3 text-lg font-semibold tracking-wide">
-                <span className="font-black">Promotora</span> e Supervisora de Eventos
+            <div className="animate-appears w-2/3 h-2/3 ">
+                <img src="ellen-main3.jpg" className="border-2 border-fuchsia-500 rounded-full object-fit animate-image" />
+            </div>
+
+            <h2 className="reveal opacity-0 mt-3 text-lg font-semibold tracking-wide">
+                <span className="font-black">Promotora</span> e Supervisora de <span className="text-fuchsia-700 font-extrabold">Eventos</span>
             </h2>
 
-            <h3 className="text-sm text-center">
+            <h3 className="reveal opacity-0 text-sm text-center w-10/12 font-semibold">
                 Forneço um trabalho <span className="underline underline-offset-3">profissional</span> e de qualidade para que tenhamos um excelente evento
             </h3>
 
-            <div className="bg-fuchsia-400 rounded-sm p-3 w-11/12 text-nowrap">
+            <div className="reveal opacity-0 bg-fuchsia-400 rounded-lg p-3 w-11/12 text-nowrap">
                 <h4 className="text-sm text-center font-semibold">
                     Estou disposta a atuar nos mais diversos cenários
                 </h4>
             </div>
 
-            <div className="bg-fuchsia-400 rounded-sm p-3 w-11/12 text-nowrap">
-                <h4 className="text-sm text-center font-black tracking-wider">
+            <div className="reveal opacity-0 bg-fuchsia-400 border-b-3 border-2 border-fuchsia-900 rounded-lg p-3 w-11/12 text-nowrap">
+                <h4 className="text-fuchsia-800 text-sm text-center font-black tracking-widest">
                     <a href={linkWpp} target="_blank">
-                        Basta me contatar!
+                        Entre em contato
                     </a>
                 </h4>
             </div>
+
+            <div className="reveal opacity-0 mt-2 grid grid-cols-3 gap-5">
+                <a href={linkInsta} target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png" alt="Instagram" className="w-10" />
+                </a>
+                <a href={linkWpp} target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-color-icon.png" alt="WhatsApp" className="w-10" />
+                </a>
+                <a href="" target="_blank">
+                    <img src="https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/red-mail-icon.png" alt="" className="w-10" />
+                </a>
+            </div>
+
+            <span className="reveal opacity-0 w-10/12 h-px border border-fochsia-500"></span>
+
         </div>
     )
 }
