@@ -10,6 +10,12 @@
   --font-roboto: "Roboto", monospace;
 }
 
+@layer base {
+  *[id] {
+    scroll-margin-top: 50px;
+  }
+}
+
 @theme inline {
   /* --color-background: var(--background);
   --color-foreground: var(--foreground); */
@@ -18,9 +24,9 @@
   --animate-slide-right: slide-right 0.8s ease-in-out forwards;
   --animate-slide-right-r: slide-right-r 0.8s ease-in-out forwards;
   --animate-hidden: hidden-animate 1s ease-in-out;
-  --animate-appears: appears-animate 1s ease-in-out;
+  --animate-appears: appears-animate 1.5s ease-in-out;
   --animate-image: image-animate 5s ease-in-out infinite;
-  --animate-reveal: reveal 0.8s ease-in-out forwards;
+  --animate-reveal: reveal 1.2s ease-in-out forwards;
 }
 
 @keyframes reveal {
@@ -86,13 +92,14 @@
 
 @keyframes slide-right-r {
   0% {
-    transform: translateX(0%);
+
     opacity: 1;
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-150%);
     opacity: 0;
+    transform: translateX(100%);
   }
 }
 
