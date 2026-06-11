@@ -3,7 +3,7 @@ import { linkIconEmail, linkIconInsta, linkIconWpp } from "../Utils/links"
 const Contact = () => {
 
     return (
-        <div id="social" className="reveal opacity-0 relative flex flex-col w-screen items-center gap-3 bg-fuchsia-400 p-3">
+        <div id="social" className="reveal opacity-0 relative flex flex-col w-screen items-center gap-3 bg-fuchsia-300 p-3">
             <span className="reveal opacity-0 absolute top-0 w-screen h-px border"></span>
 
             <h1 className="reveal opacity-0 text-lg font-black text-fuchsia-900 tracking-widest text-center border-b-2 pb-1">
@@ -35,7 +35,9 @@ const Contact = () => {
                 <h1>Email</h1>
             </div>
 
-            <img src="logo1.png" className="reveal opacity-0 w-1/2 h-1/2"/>
+            <img src="logo1.png" className="reveal opacity-0 w-1/2 h-1/2 
+                rounded-4xl p-1 bg-fuchsia-800 border-2 border-b-4 border-l-4 border-black" />
+
         </div>
     )
 }

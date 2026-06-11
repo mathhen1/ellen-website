@@ -1,6 +1,6 @@
 const Experience = () => {
 
-    const cardXp = "rounded-lg w-11/12 min-h-[70vh] h-full flex flex-col items-center justify-center bg-fuchsia-400 border-2 border-b-4 border-l-4 overflow-auto flex-shrink-0 snap-center snap-always gap-2 p-3 "
+    const cardXp = "rounded-lg w-11/12 min-h-[70vh] h-full flex flex-col items-center justify-center bg-fuchsia-300 border-2 border-b-4 border-l-4 overflow-auto flex-shrink-0 snap-center snap-always gap-2 p-3 "
     const imageXp = "rounded-4xl object-cover w-10/12 h-80 border-3 border-r-5 border-b-5 border-black"
 
     return (
@@ -103,7 +103,7 @@ const Experience = () => {
                 Retratando seu produto com beleza e delicadeza
             </h1>
 
-            <div className="reveal opacity-0 w-11/12 bg-fuchsia-400 p-3 rounded-lg 
+            <div className="reveal opacity-0 w-11/12 bg-fuchsia-300 p-3 rounded-lg 
                 flex flex-col items-center mb-1
                 border-2 border-fuchsia-900 border-b-4">
 
@@ -155,13 +155,13 @@ const Experience = () => {
                 </div>
             </div>
 
-            <h2 className="reveal opacity-0 w-11/12 text-center bg-fuchsia-400
+            <h2 className="reveal opacity-0 w-11/12 text-center bg-fuchsia-300
             rounded-md font-black p-2 tracking-wider text-nowrap border-b-2 border-l-2 border-fuchsia-800">
                 Estou aberta a novas oportunidades
             </h2>
 
             <div className="reveal opacity-0 w-11/12 text-center bg-gradient-to-r 
-            from-fuchsia-500 via-fuchsia-400 to-fuchsia-500 p-2
+            from-fuchsia-600 via-fuchsia-500 to-fuchsia-600 p-2
             rounded-md">
                 <h2 className="reveal opacity-0 text-black font-black tracking-wide text-white italic">
                     O que está esperando?
