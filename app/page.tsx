@@ -5,6 +5,8 @@ import AboutMe from "./Components/AboutMe";
 import AboutMeDetails from "./Components/AboutMeDetails";
 import NavBar from "./Components/NavBar";
 import Experience from "./Components/Experience";
+import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 export default function Home() {
 
@@ -17,6 +19,8 @@ export default function Home() {
           entry.target.classList.add("animate-reveal")
         }
       })
+    }, {
+      threshold: 0.2
     })
 
     root.forEach(node => {
@@ -36,6 +40,10 @@ export default function Home() {
       <AboutMeDetails />
 
       <Experience />
+
+      <Contact />
+
+      <Footer />
     </div>
   );
 }
