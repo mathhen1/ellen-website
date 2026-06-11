@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ellen Souza - Promotora de Eventos",
   description: "Promotora e Supervisora de Eventos",
+  icons:{
+    icon:"logo1.png"
+  }
 };
 
 export default function RootLayout({
