@@ -5,7 +5,7 @@ const Experience = () => {
 
     return (
         <div className="flex flex-col gap-3 items-center justify-center">
-            <h1 className="reveal opacity-0 font-black text-fuchsia-800 tracking-wider text-xl border-b-2">
+            <h1 id="experiencia" className="reveal opacity-0 font-black text-fuchsia-800 tracking-wider text-xl border-b-2">
                 Experiência
             </h1>
 

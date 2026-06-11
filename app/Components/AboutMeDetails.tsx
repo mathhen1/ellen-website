@@ -1,7 +1,7 @@
 const AboutMeDetails = () => {
     return (
         <div className="flex flex-col justify-center items-center mt-3 w-screen gap-3">
-            <h1 className="reveal opacity-0 text-xl text-fuchsia-800 font-black tracking-wide border-b-2 pb-1">
+            <h1 id="formacao" className="reveal opacity-0 text-xl text-fuchsia-800 font-black tracking-wide border-b-2 pb-1">
                 Formação e Conhecimentos
             </h1>
 
@@ -28,26 +28,26 @@ const AboutMeDetails = () => {
 
                 <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-900 text-white font-black text-sm">
+                    bg-fuchsia-800 text-white font-black text-sm">
                     Adobe Photoshop
                 </h2>
 
                 <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-900 text-white font-black text-sm">
+                    bg-fuchsia-800 text-white font-black text-sm">
                     Marketing Digital
                 </h2>
 
                 <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-900 text-white font-black text-sm">
+                    bg-fuchsia-800 text-white font-black text-sm">
                     Design Gráfico
                 </h2>
             </div>
 
             {/* Infos */}
 
-            <h1 className="reveal opacity-0 text-xl font-black tracking-wider text-fuchsia-800 border-b-2">
+            <h1 id="infos" className="reveal opacity-0 text-xl font-black tracking-wider text-fuchsia-800 border-b-2">
                 Infos
             </h1>
 
