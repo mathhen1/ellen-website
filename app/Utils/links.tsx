@@ -1,2 +1,10 @@
 export const linkInsta = "https://www.instagram.com/promotoraellen?igsh=MzFqYnpibjl5MGcx"
-export const linkWpp = "https://wa.me/5581985432334"
+export const linkWpp = "https://wa.me/5581985432334?text=Ol%C3%A1%2C%20estou%20precisando%20de%20um%20servi%C3%A7o%2E"
+
+export const linkIconInsta = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/ig-instagram-icon.png"
+export const linkIconWpp = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/whatsapp-color-icon.png"
+export const linkIconEmail = "https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/red-mail-icon.png"
+export const linkIconInstaBlack = "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/black-instagram-icon.png"
+export const linkIconTel = "https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/calling-icon.png"
+export const linkIconEmailBlack = "https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/envelope-line-icon.png"
+export const linkIconTelBlack = "https://uxwing.com/wp-content/themes/uxwing/download/communication-chat-call/ringing-phone-outline-icon.png"
