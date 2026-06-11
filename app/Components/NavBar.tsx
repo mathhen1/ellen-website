@@ -4,19 +4,23 @@ import { useState } from "react"
 const NavBar = () => {
 
     const [menuOpen, setMenuOpen] = useState<boolean>(false)
+    const [menuIsOpening, setMenuIsOpening] = useState<boolean>(false)
 
     const showMenu = menuOpen ? "block" : "hidden"
-    const animateMenuOpening = menuOpen ? "animate-slide-right" : "animate-slide-right-r"
-
-    const closeBar = menuOpen ? "hidden" : "block"
+    const animateMenuOpening = menuIsOpening ? "animate-slide-right" : "animate-slide-right-r"
 
     const handleMenu = () => {
         if (menuOpen === false) {
+            setMenuIsOpening(true)
             setMenuOpen(true)
         }
 
         if (menuOpen === true) {
-            setMenuOpen(false)
+            setMenuIsOpening(false)
+            setTimeout(() => {
+                setMenuOpen(false)
+            }, 800);
+            
         }
     }
 
