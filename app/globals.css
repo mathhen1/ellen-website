@@ -27,6 +27,17 @@
   --animate-appears: appears-animate 1.5s ease-in-out;
   --animate-image: image-animate 5s ease-in-out infinite;
   --animate-reveal: reveal 1.2s ease-in-out forwards;
+  --animate-marquee: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes reveal {
