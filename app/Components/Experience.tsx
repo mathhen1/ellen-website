@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react"
 
 const Experience = () => {
 
-    const cardXp = "rounded-lg w-11/12 min-h-[70vh] h-full flex flex-col items-center justify-center bg-fuchsia-300 border-2 border-b-4 border-l-4 overflow-auto flex-shrink-0 snap-center snap-always gap-2 p-3 "
-    const imageXp = "rounded-4xl object-cover w-10/12 h-80 border-2 border-r-4 border-b-4 border-black"
+    const cardXp = "rounded-lg w-11/12 min-h-[70vh] sm:w-1/3 flex flex-col items-center justify-center bg-fuchsia-300 border-2 border-b-4 border-l-4 overflow-auto flex-shrink-0 snap-center snap-always gap-2 p-3 self-stretch text-center"
+    const imageXp = "rounded-4xl object-cover w-10/12 h-80 sm:h-40 sm:object-fill border-2 border-r-4 border-b-4 border-black"
 
     const [countXp, setCountXp] = useState<number>(0)
     const [countYearsXp, setCountYearsXp] = useState<number>(0)
@@ -65,7 +65,7 @@ const Experience = () => {
 
             <div className="reveal opacity-0 flex flex-row gap-3 
                 overflow-x-auto h-full m-1 p-1 scrollbar-none 
-                w-full snap-x snap-mandatory">
+                w-full snap-x snap-mandatory sm:items-stretch">
 
                 <div className={cardXp}>
 
@@ -183,7 +183,7 @@ const Experience = () => {
                     <img src="ellen-dubex.jpg" className={imageXp} />
 
                     <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Construtora Moura Dubex
+                        Moura Dubex
                     </h1>
 
                     <h2 className="w-10/12 text-center text-sm font-bold">
@@ -239,7 +239,7 @@ const Experience = () => {
                     Com quem já trabalhei?
                 </h1>
 
-                <div className="reveal opacity-0 flex flex-col gap-3 w-full items-center text-fuchsia-800 font-black bg-fuchsia-200 p-2">
+                <div className="reveal opacity-0 flex flex-col sm:flex-row sm:justify-center sm:items-stretch gap-3 w-full items-center text-fuchsia-800 font-black bg-fuchsia-200 p-2">
 
                     <div className="reveal opacity-0 bg-fuchsia-100 rounded-sm
                         p-2 flex flex-col gap-2 w-full items-center
@@ -247,7 +247,7 @@ const Experience = () => {
 
                         <h1 className="text-base">Marcas de Bebidas</h1>
 
-                        <ul className="font-medium list-disc text-sm tracking-wide text-start">
+                        <ul className="font-medium list-disc text-sm sm:text-xs tracking-wide text-start">
                             <li className="reveal opacity-0">
                                 Cerveja Imperio
                             </li>
@@ -273,7 +273,7 @@ const Experience = () => {
 
                         <h1 className="text-base">Clubes de Pernambuco</h1>
 
-                        <ul className="font-medium list-disc text-sm text-start trackind-wide">
+                        <ul className="font-medium list-disc text-sm sm:text-xs text-start trackind-wide">
                             <li className="reveal opacity-0">
                                 Sport Club Recife
                             </li>
@@ -288,7 +288,7 @@ const Experience = () => {
                         border-black border-2 border-b-3 border-l-3">
                         <h1 className="text-base">Construtoras de Pernambuco</h1>
 
-                        <ul className="font-medium list-disc text-sm text-start trackind-wide">
+                        <ul className="font-medium list-disc text-sm sm:text-xs text-start trackind-wide">
                             <li className="reveal opacity-0">
                                 Pernambuco Construtora
                             </li>
@@ -296,7 +296,7 @@ const Experience = () => {
                                 Rio Ave Construtora
                             </li>
                             <li className="reveal opacity-0">
-                                Moura Dubex Construtora
+                                Moura Dubex
                             </li>
                             <li className="reveal opacity-0">
                                 Gabriel Bacelar
@@ -312,7 +312,7 @@ const Experience = () => {
                             Gerais
                         </h1>
 
-                        <ul className="font-medium list-disc text-sm text-start trackind-wide">
+                        <ul className="font-medium list-disc text-sm sm:text-xs text-start trackind-wide">
                             <li className="reveal opacity-0">
                                 Bet dá Sorte
                             </li>
@@ -337,12 +337,12 @@ const Experience = () => {
                 <span className="absolute bottom-0 h-px w-full border"></span>
             </div>
 
-            <h2 className="reveal opacity-0 w-11/12 text-center bg-fuchsia-300
+            <h2 className="reveal opacity-0 w-11/12 sm:w-1/2 text-center bg-fuchsia-300
             rounded-md font-black p-2 tracking-wider text-nowrap border-b-2 border-l-2 border-fuchsia-800">
                 Estou aberta a novas oportunidades
             </h2>
 
-            <div className="reveal opacity-0 w-11/12 text-center bg-gradient-to-r 
+            <div className="reveal opacity-0 w-11/12 sm:w-1/2 text-center bg-gradient-to-r 
             from-fuchsia-600 via-fuchsia-500 to-fuchsia-600 p-2
             rounded-md">
                 <h2 className="reveal opacity-0 text-black font-black tracking-wide text-white italic">
@@ -350,13 +350,13 @@ const Experience = () => {
                 </h2>
             </div>
 
-            <h2 className="reveal opacity-0 w-11/12 text-center font-black
+            <h2 className="reveal opacity-0 w-11/12 sm:w-1/2 text-center font-black
                 p-2 border-black border-2 border-b-4 border-l-4 mb-3">
                 Me contrate
             </h2>
 
-            <h1 className="reveal opacity-0 text-black tracking-wide w-10/12
-            text-lg text-center font-black tracking-wider
+            <h1 className="reveal opacity-0 text-black tracking-wide 
+            w-10/12 text-lg text-center font-black tracking-wider
             bg-clip-text text-transparent bg-gradient-to-r
             from-fuchsia-800 via-fuchsia-600 to-fuchsia-800
             border-black border-b-2 border-t-2 p-2 border-fuchsia-500">
@@ -368,7 +368,7 @@ const Experience = () => {
                     {countXp}<span className="reveal opacity-0 text-fuchsia-700 font-normal">+</span>
                 </h1>
                 <h2 className="reveal opacity-0 text-base">
-                    Jobs concluídos
+                    Ações concluídas
                 </h2>
             </div>
 

@@ -32,35 +32,42 @@ const NavBar = () => {
                 </h1>
                 <Menu className="flex-none" onClick={handleMenu} />
             </div>
-            <div className={"overflow-x-hidden absolute z-10 h-[102vh] w-full flex justify-end backdrop-blur " + showMenu}>
-                <div className={"absolute h-full flex flex-col items-center bg-fuchsia-300 w-3/4 border-3 p-3 gap-3 " + animateMenuOpening}>
+            <div className={"overflow-x-hidden absolute z-10 h-[102vh] min-h-full w-full flex justify-end backdrop-blur " + showMenu}>
+                <div className={"absolute min-h-full flex flex-col items-center bg-fuchsia-300 w-3/4 sm:w-2/4 border-3 p-3 gap-3 " + animateMenuOpening}>
                     <Menu className="flex-none" onClick={handleMenu} />
 
-                    <span className="h-px w-3/4 border border-black"></span>
+                    <span className="h-px w-3/4 sm:w-2/4 border border-black"></span>
 
-                    <img src="ellen-nav.jpg" className="w-32 h-32 rounded-full object-cover" />
+                    <img src="ellen-nav.jpg" className="w-32 h-32 sm:w-20 sm:h-20 rounded-full object-cover" />
 
-                    <div className="flex flex-col items-center gap-3 p-2 text-black font-extrabold">
-                        <a href="#sobre-mim" onClick={handleMenu}>
-                            Sobre Mim
-                        </a>
-                        <a href="#skills" onClick={handleMenu}>
-                            Habilidades
-                        </a>
-                        <a href="#infos" onClick={handleMenu}>
-                            Informações Adicionais
-                        </a>
-                        <a href="#experiencia" onClick={handleMenu}>
-                            Experiência
-                        </a>
-                        <a href="#social" onClick={handleMenu}>
-                            Social
-                        </a>
+                    <div className="flex flex-col justify-center items-center">
+
+                        <div className="flex flex-col sm:gap-2 sm:p-1 
+                    items-center gap-3 p-2 text-black font-extrabold
+                    sm:text-nowrap sm:text-sm sm:tracking-wide">
+                            <a href="#sobre-mim" onClick={handleMenu}>
+                                Sobre Mim
+                            </a>
+                            <a href="#skills" onClick={handleMenu}>
+                                Habilidades
+                            </a>
+                            <a href="#infos" onClick={handleMenu}>
+                                Informações adicionais
+                            </a>
+                            <a href="#experiencia" onClick={handleMenu}>
+                                Experiência
+                            </a>
+                            <a href="#social" onClick={handleMenu}>
+                                Social
+                            </a>
+                        </div>
+
+
+                        <img src="logo1.png" className="w-10/12 h-1/4 brightness-0 sm:w-1/4 sm:h-3/4" />
                     </div>
 
-                    <span className="h-px w-3/4 border border-black"></span>
+                    <span className="h-px w-3/4 sm:w-2/4 border border-black"></span>
 
-                    <img src="logo1.png" className="w-10/12 h-1/4 brightness-0" />
                 </div>
             </div>
         </div>

@@ -2,26 +2,28 @@ const AboutMeDetails = () => {
     return (
         <div className="flex flex-col justify-center items-center mt-3 w-screen gap-3">
 
-            <div className="flex flex-col gap-3 items-center w-11/12">
+            {/* Habilidades */}
+
+            <div className="flex flex-col gap-3 items-center w-11/12 sm:w-1/2">
                 <h1 id="skills" className="reveal opacity-0 text-fuchsia-800 font-black text-xl border-b p-1">
                     Habilidades
                 </h1>
 
                 <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-800 text-white font-black text-sm">
+                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5">
                     Adobe Photoshop
                 </h2>
 
                 <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-800 text-white font-black text-sm">
+                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5">
                     Marketing Digital
                 </h2>
 
                 <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-800 text-white font-black text-sm">
+                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5">
                     Design Gráfico
                 </h2>
 
@@ -64,8 +66,7 @@ const AboutMeDetails = () => {
 
             {/* Card Disponibilidade */}
 
-            <div className="reveal opacity-0 w-11/12 bg-fuchsia-200 text-center flex flex-col justify-center items-center p-2 
-            rounded-md gap-3 outline-2 outline-fuchsia-700">
+            <div className="reveal opacity-0 w-11/12 sm:w-2/3 bg-fuchsia-200 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 outline-2 outline-fuchsia-700">
 
                 <h1 className="pt-3 font-black tracking-wide text-fuchsia-900">Disponibilidade</h1>
 
@@ -115,7 +116,7 @@ const AboutMeDetails = () => {
 
             {/* Card Pessoal */}
 
-            <div className="reveal opacity-0 w-11/12 bg-fuchsia-200 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 border-2 border-fuchsia-700">
+            <div className="reveal opacity-0 w-11/12 sm:w-2/3 bg-fuchsia-200 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 border-2 border-fuchsia-700">
 
                 <h1 className="text-fuchsia-900 font-black tracking-wider">
                     Sobre Mim

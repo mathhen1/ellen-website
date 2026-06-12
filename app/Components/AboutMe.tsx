@@ -9,7 +9,7 @@ const AboutMe = () => {
 
             {/* <img src="ellen-main3.jpg" className="rounded-full object-fit w-2/3 h-2/3 border-2 border-fuchsia-500 animate-image" /> */}
 
-            <div className="animate-appears w-2/3 h-2/3 ">
+            <div className="animate-appears w-2/3 h-2/3 sm:w-1/4">
                 <img src="ellen-main3.jpg" className="border-2 border-fuchsia-500 rounded-full object-fit animate-image" />
             </div>
 
@@ -21,13 +21,14 @@ const AboutMe = () => {
                 Forneço um trabalho <span className="underline underline-offset-3">profissional</span> e de qualidade para que tenhamos um excelente evento
             </h3>
 
-            <div className="reveal opacity-0 bg-fuchsia-300 rounded-lg p-3 w-11/12 text-nowrap">
+            <div className="reveal opacity-0 bg-fuchsia-300 rounded-lg p-3 w-11/12 sm:w-1/2 text-nowrap">
                 <h4 className="text-sm text-center font-semibold">
                     Estou disposta a atuar nos mais diversos cenários
                 </h4>
             </div>
 
-            <div className="reveal opacity-0 bg-fuchsia-300 border-b-3 border-2 border-fuchsia-900 rounded-lg p-3 w-11/12 text-nowrap">
+            <div className="reveal opacity-0 bg-fuchsia-300 border-b-3 sm:w-1/2
+                border-2 border-fuchsia-900 rounded-lg p-3 w-11/12 text-nowrap">
                 <h4 className="text-fuchsia-800 text-sm text-center font-black tracking-widest">
                     <a href={linkWpp} target="_blank">
                         Entre em contato
