@@ -63,175 +63,184 @@ const Experience = () => {
                 Experiência
             </h1>
 
-            <div className="reveal opacity-0 flex flex-row gap-3 
-                overflow-x-auto h-full m-1 p-1 scrollbar-none 
+            <div className="relative reveal opacity-0 flex flex-row gap-3 
+                max-lg:overflow-x-auto h-full m-1 p-1 max-lg:scrollbar-none 
                 w-full snap-x snap-mandatory sm:items-stretch">
 
-                <div className={cardXp}>
+                <span className="absolute top-0 hidden lg:block w-full h-px border border-fuchsia-800 -m-1"></span>
 
-                    <img src="ellen-imperio2.jpg" className={imageXp} />
+                <div className="flex flex-row gap-3 
+                max-lg:overflow-x-auto h-full max-lg:scrollbar-none lg:m-2 lg:p-2
+                w-full max-lg:snap-x max-lg:snap-mandatory sm:items-stretch lg:animate-marquee">
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Cerveja Imperio
-                    </h1>
+                    <div className={cardXp}>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Ação de Degustação
-                    </h2>
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Cerveja Império é uma grande marca brasileira de cerveja do tipo puro malte, pertencente à Cervejaria Cidade Imperial
-                    </p>
+                        <img src="ellen-imperio2.jpg" className={imageXp} />
 
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Cerveja Imperio
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-imperio1.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Ação de Degustação
+                        </h2>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Cerveja Império é uma grande marca brasileira de cerveja do tipo puro malte, pertencente à Cervejaria Cidade Imperial
+                        </p>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Cerveja Imperio
-                    </h1>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Ação de Degustação
-                    </h2>
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Cerveja Império é uma grande marca brasileira de cerveja do tipo puro malte, pertencente à Cervejaria Cidade Imperial
-                    </p>
-                </div>
+                    <div className={cardXp}>
+                        <img src="ellen-imperio1.jpg" className={imageXp} />
 
-                <div className={cardXp}>
-                    <img src="ellen-bet.jpg" className={imageXp} />
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Cerveja Imperio
+                        </h1>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Bet dá Sorte
-                    </h1>
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Ação de Degustação
+                        </h2>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Cerveja Império é uma grande marca brasileira de cerveja do tipo puro malte, pertencente à Cervejaria Cidade Imperial
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Ação de Promoção e Divulgação
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-bet.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Bet Dá Sorte é uma plataforma brasileira de apostas online regulamentada de quota fixa que opera no segmento de apostas esportivas
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Bet dá Sorte
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-matuta1.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Ação de Promoção e Divulgação
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Cachaça Matuta
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Bet Dá Sorte é uma plataforma brasileira de apostas online regulamentada de quota fixa que opera no segmento de apostas esportivas
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Ação de Degustação e troca de brinde
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-matuta1.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Cachaça Matuta é uma premiada marca artesanal produzida no Engenho Vaca Brava. Se destaca pela identidade nordestina.
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Cachaça Matuta
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-itaipava.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Ação de Degustação e troca de brinde
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Itaipava
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Cachaça Matuta é uma premiada marca artesanal produzida no Engenho Vaca Brava. Se destaca pela identidade nordestina.
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Bar
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-itaipava.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Itaipava é uma das cervejas mais populares do Brasil, produzida e distribuída pelo Grupo Petrópolis, a segunda maior cervejaria do país e a maior com capital 100% nacional
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Itaipava
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-ketel.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Bar
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Ketel One
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Itaipava é uma das cervejas mais populares do Brasil, produzida e distribuída pelo Grupo Petrópolis, a segunda maior cervejaria do país e a maior com capital 100% nacional
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Bar
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-ketel.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Ketel One é uma vodka premium holandesa, produzida artesanalmente em pequenos lotes pela destilaria Nolet, uma empresa familiar com mais de 300 anos de história
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Ketel One
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-tanqueray.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Bar
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Tanqueray
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Ketel One é uma vodka premium holandesa, produzida artesanalmente em pequenos lotes pela destilaria Nolet, uma empresa familiar com mais de 300 anos de história
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Bar
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-tanqueray.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        Tanqueray é um dos gins London Dry mais prestigiados e vendidos do mundo, famoso pela sua garrafa icônica e receita clássica, foi criada em 1830 em Londres
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Tanqueray
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-dubex.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Bar
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Moura Dubex
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            Tanqueray é um dos gins London Dry mais prestigiados e vendidos do mundo, famoso pela sua garrafa icônica e receita clássica, foi criada em 1830 em Londres
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Ação de Panfletagem
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-dubex.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Moura Dubeux é a maior incorporadora e construtora da região do Nordeste, com mais de 40 anos de atuação e foco no mercado de médio e alto padrão
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Moura Dubex
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-rioave.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Ação de Panfletagem
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Construtora Rio Ave
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Moura Dubeux é a maior incorporadora e construtora da região do Nordeste, com mais de 40 anos de atuação e foco no mercado de médio e alto padrão
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Ação de Panfletagem
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-rioave.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        A Construtora Rio Ave, com mais de 5 décadas de história, é referência no mercado de imóveis de alto padrão e construções corporativas em Pernambuco
-                    </p>
-                </div>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Construtora Rio Ave
+                        </h1>
 
-                <div className={cardXp}>
-                    <img src="ellen-sport.jpg" className={imageXp} />
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Ação de Panfletagem
+                        </h2>
 
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Sport Club Recife
-                    </h1>
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            A Construtora Rio Ave, com mais de 5 décadas de história, é referência no mercado de imóveis de alto padrão e construções corporativas em Pernambuco
+                        </p>
+                    </div>
 
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Organização de Portões
-                    </h2>
+                    <div className={cardXp}>
+                        <img src="ellen-sport.jpg" className={imageXp} />
 
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        O Sport Club do Recife, fundado em 1905, é um dos maiores e mais tradicionais clubes do futebol brasileiro, sendo também referencia no Nordeste
-                    </p>
+                        <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
+                            Sport Club Recife
+                        </h1>
+
+                        <h2 className="w-10/12 text-center text-sm font-bold">
+                            Organização de Portões
+                        </h2>
+
+                        <p className="text-xs font-semibold w-10/12 text-center">
+                            O Sport Club do Recife, fundado em 1905, é um dos maiores e mais tradicionais clubes do futebol brasileiro, sendo também referencia no Nordeste
+                        </p>
+                    </div>
+
                 </div>
             </div>
 
             {/* Card "Com quem já trabalhei?" */}
 
             <div className="relative reveal opacity-0 w-full p-3 
-                flex flex-col items-center mb-1 bg-fuchsia-200">
+                flex flex-col items-center mb-1 overflow-hidden 
+                bg-fuchsia-200 lg:bg-fuchsia-300">
 
                 <span className="reveal opacity-0 absolute top-0 h-px w-full border"></span>
 
@@ -239,7 +248,9 @@ const Experience = () => {
                     Com quem já trabalhei?
                 </h1>
 
-                <div className="reveal opacity-0 flex flex-col sm:flex-row sm:justify-center sm:items-stretch gap-3 w-full items-center text-fuchsia-800 font-black bg-fuchsia-200 p-2">
+                <div className="reveal opacity-0 flex flex-col sm:flex-row sm:justify-center sm:items-stretch gap-3 w-full lg:w-2/3 items-center text-fuchsia-800 font-black 
+                bg-fuchsia-200 lg:bg-fuchsia-300 p-2
+                lg:grid lg:grid-cols-2 lg:justify-center">
 
                     <div className="reveal opacity-0 bg-fuchsia-100 rounded-sm
                         p-2 flex flex-col gap-2 w-full items-center
@@ -356,14 +367,14 @@ const Experience = () => {
             </h2>
 
             <h1 className="reveal opacity-0 text-black tracking-wide 
-            w-10/12 text-lg text-center font-black tracking-wider
+            w-10/12 lg:w-full text-lg text-center font-black tracking-wider
             bg-clip-text text-transparent bg-gradient-to-r
             from-fuchsia-800 via-fuchsia-600 to-fuchsia-800
             border-black border-b-2 border-t-2 p-2 border-fuchsia-500">
                 Sempre retratando seu produto com beleza e delicadeza
             </h1>
 
-            <div className="reveal opacity-0 w-10/12 flex flex-col items-center text-fuchsia-400 font-black tracking-widest">
+            <div className="reveal opacity-0 w-10/12 flex flex-col items-center text-fuchsia-400 lg:text-fuchsia-500 font-black tracking-widest">
                 <h1 ref={elRef} className="reveal opacity-0 text-5xl text-fuchsia-800">
                     {countXp}<span className="reveal opacity-0 text-fuchsia-700 font-normal">+</span>
                 </h1>
@@ -372,7 +383,7 @@ const Experience = () => {
                 </h2>
             </div>
 
-            <div className="reveal opacity-0 w-10/12 flex flex-col items-center text-fuchsia-400 font-black tracking-widest mb-3">
+            <div className="reveal opacity-0 w-10/12 flex flex-col items-center text-fuchsia-400 lg:text-fuchsia-500 font-black tracking-widest mb-3">
                 <h1 ref={elRef} className="reveal opacity-0 text-5xl text-fuchsia-800">
                     {countYearsXp}<span className="reveal opacity-0 text-fuchsia-700 font-normal">+</span>
                 </h1>
