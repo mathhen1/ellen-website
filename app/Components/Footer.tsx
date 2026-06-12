@@ -7,34 +7,35 @@ const Footer = () => {
 
     return (
         <div className="reveal opacity-0 w-screen relative flex flex-col items-center text-center
-            bg-fuchsia-700 text-fuchsia-950 p-2 gap-3">
-            <span className="reveal opacity-0 h-px top-0 absolute w-full border border-fuchsia-900"></span>
+            bg-fuchsia-400 text-fuchsia-950 p-2 gap-3">
+
+            <span className="reveal opacity-0 h-px top-0 absolute w-full border-t border-black"></span>
 
             <div className="reveal opacity-0 flex flex-col items-start text-start w-full mt-2 border-b p-1 pb-2">
                 <h1 className="reveal opacity-0 text-black text-base font-black tracking-widest">
-                    Links
+                    Links Rápidos
                 </h1>
 
                 <ul className="reveal opacity-0 text-base pl-2 font-black tracking-widest
                     flex flex-col gap-1 italic">
                     <li className="reveal opacity-0">
-                        -&gt; Sobre mim
+                        <a href="#sobre-mim">-&gt; Sobre mim</a>
                     </li>
 
                     <li className="reveal opacity-0">
-                        -&gt; Formação e Habilidades
+                        <a href="#skills">-&gt; Formação e Habilidades</a>
                     </li>
 
                     <li className="reveal opacity-0">
-                        -&gt; Informações adicionais
+                        <a href="#infos">-&gt; Informações adicionais</a>
                     </li>
 
                     <li className="reveal opacity-0">
-                        -&gt; Experiência
+                        <a href="#experiencia">-&gt; Experiência</a>
                     </li>
 
                     <li className="reveal opacity-0">
-                        -&gt; Social
+                        <a href="#social">-&gt; Social</a>
                     </li>
                 </ul>
             </div>

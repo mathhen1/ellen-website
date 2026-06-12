@@ -20,27 +20,27 @@ const NavBar = () => {
             setTimeout(() => {
                 setMenuOpen(false)
             }, 800);
-            
+
         }
     }
 
     return (
         <div className="animate-appears relative w-screen flex h-full">
-            <div className={"w-screen flex flex-row font-roboto border-b-2 border-black p-2 bg-fuchsia-800 items-center"}>
-                <h1 className="flex-1 text-2xl pl-5 text-pink-200 font-black tracking-wider">
+            <div className={"w-screen flex flex-row font-roboto border-b-2 border-black p-2 bg-fuchsia-300 items-center"}>
+                <h1 className="flex-1 text-2xl pl-5 text-fuchsia-950 font-black tracking-wide">
                     <a href="">Promotora Ellen</a>
                 </h1>
                 <Menu className="flex-none" onClick={handleMenu} />
             </div>
             <div className={"overflow-x-hidden absolute z-10 h-[102vh] w-full flex justify-end backdrop-blur " + showMenu}>
-                <div className={"absolute h-full flex flex-col items-center bg-fuchsia-800 w-3/4 border-3 p-3 gap-3 " + animateMenuOpening}>
+                <div className={"absolute h-full flex flex-col items-center bg-fuchsia-300 w-3/4 border-3 p-3 gap-3 " + animateMenuOpening}>
                     <Menu className="flex-none" onClick={handleMenu} />
 
                     <span className="h-px w-3/4 border border-black"></span>
 
                     <img src="ellen-nav.jpg" className="w-32 h-32 rounded-full object-cover" />
 
-                    <div className="flex flex-col items-center gap-3 p-2">
+                    <div className="flex flex-col items-center gap-3 p-2 text-black font-extrabold">
                         <a href="#sobre-mim" onClick={handleMenu}>
                             Sobre Mim
                         </a>
@@ -60,7 +60,7 @@ const NavBar = () => {
 
                     <span className="h-px w-3/4 border border-black"></span>
 
-                    <img src="logo1.png" className="w-10/12 h-1/4" />
+                    <img src="logo1.png" className="w-10/12 h-1/4 brightness-0" />
                 </div>
             </div>
         </div>

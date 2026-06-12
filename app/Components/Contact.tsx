@@ -14,29 +14,30 @@ const Contact = () => {
                 Me acompanhe em minhas redes sociais
             </h2>
 
-            <div className="reveal opacity-0 w-11/12 bg-fuchsia-300 border-2 border-black
+            <div className="reveal opacity-0 w-11/12 bg-fuchsia-200 border-2 border-black
             flex justify-center items-center rounded-sm p-3 gap-2
             text-fuchsia-800 font-extrabold text-xl">
                 <img src={linkIconInsta} className="w-6 h-6" />
                 <h1>Instagram</h1>
             </div>
 
-            <div className="reveal opacity-0 w-11/12 bg-fuchsia-300 border-2 border-black
+            <div className="reveal opacity-0 w-11/12 bg-fuchsia-200 border-2 border-black
             flex justify-center items-center rounded-sm p-3 gap-2
             text-fuchsia-800 font-extrabold text-xl">
                 <img src={linkIconWpp} className="w-6 h-6" />
                 <h1>WhatsApp</h1>
             </div>
 
-            <div className="reveal opacity-0 w-11/12 bg-fuchsia-300 border-2 border-black
+            <div className="reveal opacity-0 w-11/12 bg-fuchsia-200 border-2 border-black
             flex justify-center items-center rounded-sm p-3 gap-2
             text-fuchsia-800 font-extrabold text-xl">
                 <img src={linkIconEmail} className="w-6 h-6" />
                 <h1>Email</h1>
             </div>
 
-            <img src="logo1.png" className="reveal opacity-0 w-1/2 h-1/2 
-                rounded-4xl p-1 bg-fuchsia-800 border-2 border-b-4 border-l-4 border-black" />
+            <img src="logo1.png" className="reveal opacity-0 w-1/2 h-1/2 mt-1 mb-1 brightness-0" />
+
+            <span className="reveal opacity-0 h-px bottom-0 absolute w-full border-b border-black"></span>
 
         </div>
     )
