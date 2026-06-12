@@ -9,26 +9,30 @@ const AboutMeDetails = () => {
                     Habilidades
                 </h1>
 
-                <h2 className="reveal opacity-0 border-2 border-fuchsia-700
-                    rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5">
-                    Adobe Photoshop
-                </h2>
+                <div className="flex flex-col gap-3 items-center w-full
+                lg:grid lg:grid-cols-[repeat(3,max-content)] lg:text-nowrap lg:justify-center">
 
-                <h2 className="reveal opacity-0 border-2 border-fuchsia-700
+                    <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5">
-                    Marketing Digital
-                </h2>
+                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5 lg:w-full">
+                        Adobe Photoshop
+                    </h2>
 
-                <h2 className="reveal opacity-0 border-2 border-fuchsia-700
+                    <h2 className="reveal opacity-0 border-2 border-fuchsia-700
                     rounded-xl p-2 w-full text-center tracking-widest 
-                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5">
-                    Design Gráfico
-                </h2>
+                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5 lg:w-full">
+                        Marketing Digital
+                    </h2>
+
+                    <h2 className="reveal opacity-0 border-2 border-fuchsia-700
+                    rounded-xl p-2 w-full text-center tracking-widest 
+                    bg-fuchsia-800 text-white font-black text-sm sm:w-4/5 lg:w-full">
+                        Design Gráfico
+                    </h2>
+                </div>
 
                 <div className="reveal opacity-0 flex flex-col items-center w-full 
-                    bg-fuchsia-200 border-2 rounded-md p-2 text-fuchsia-700 mt-2">
+                    bg-fuchsia-200 lg:bg-fuchsia-300 border-2 rounded-md p-2 text-fuchsia-700 mt-2">
 
                     <h2 className="reveal opacity-0 text-lg font-black tracking-wider">Habilidades Extras</h2>
 
@@ -66,7 +70,7 @@ const AboutMeDetails = () => {
 
             {/* Card Disponibilidade */}
 
-            <div className="reveal opacity-0 w-11/12 sm:w-2/3 bg-fuchsia-200 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 outline-2 outline-fuchsia-700">
+            <div className="reveal opacity-0 w-11/12 sm:w-2/3 lg:w-1/2 bg-fuchsia-200 lg:bg-fuchsia-300 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 outline-2 outline-fuchsia-700">
 
                 <h1 className="pt-3 font-black tracking-wide text-fuchsia-900">Disponibilidade</h1>
 
@@ -116,7 +120,7 @@ const AboutMeDetails = () => {
 
             {/* Card Pessoal */}
 
-            <div className="reveal opacity-0 w-11/12 sm:w-2/3 bg-fuchsia-200 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 border-2 border-fuchsia-700">
+            <div className="reveal opacity-0 w-11/12 sm:w-2/3 lg:w-1/2 bg-fuchsia-200 lg:bg-fuchsia-300 text-center flex flex-col justify-center items-center p-2 rounded-md gap-3 border-2 border-fuchsia-700">
 
                 <h1 className="text-fuchsia-900 font-black tracking-wider">
                     Sobre Mim
