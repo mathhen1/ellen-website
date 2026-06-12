@@ -226,22 +226,6 @@ const Experience = () => {
                         O Sport Club do Recife, fundado em 1905, é um dos maiores e mais tradicionais clubes do futebol brasileiro, sendo também referencia no Nordeste
                     </p>
                 </div>
-
-                <div className={cardXp}>
-                    <img src="ellen-sport.jpg" className={imageXp} />
-
-                    <h1 className="text-lg text-fuchsia-900 font-extrabold tracking-wider">
-                        Sport Club Recife
-                    </h1>
-
-                    <h2 className="w-10/12 text-center text-sm font-bold">
-                        Organização de Portões
-                    </h2>
-
-                    <p className="text-xs font-semibold w-10/12 text-center">
-                        O Sport Club do Recife, fundado em 1905, é um dos maiores e mais tradicionais clubes do futebol brasileiro, sendo também referência no Nordeste
-                    </p>
-                </div>
             </div>
 
             {/* Card "Com quem já trabalhei?" */}
