@@ -30,7 +30,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="h-full w-screen overflow-clip">
+    <div className="h-full w-screen overflow-clip lg:font-mono">
       <div className="sticky -top-1 z-10 h-full">
         <NavBar />
       </div>
