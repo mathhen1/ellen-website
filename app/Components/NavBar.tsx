@@ -27,10 +27,19 @@ const NavBar = () => {
     return (
         <div className="animate-appears relative w-screen flex h-full">
             <div className={"w-screen flex flex-row font-roboto border-b-2 border-black p-2 bg-fuchsia-300 items-center"}>
-                <h1 className="flex-1 text-2xl pl-5 text-fuchsia-950 font-black tracking-wide">
+                <h1 className="flex-1 lg:flex-none text-2xl pl-5 text-fuchsia-950 font-black tracking-wide">
                     <a href="">Promotora Ellen</a>
                 </h1>
-                <Menu className="flex-none" onClick={handleMenu} />
+
+                <div className="hidden lg:flex w-full flex justify-center gap-5 pr-5 font-black tracking-wide">
+                    <a href="#sobre-mim">Sobre mim</a>
+                    <a href="#skills">Habilidades</a>
+                    <a href="#infos">Infos</a>
+                    <a href="#experiencia">Experiência</a>
+                    <a href="#social">Social</a>
+                </div>
+
+                <Menu className="flex-none block lg:hidden" onClick={handleMenu} />
             </div>
             <div className={"overflow-x-hidden absolute z-10 h-[102vh] min-h-full w-full flex justify-end backdrop-blur " + showMenu}>
                 <div className={"absolute min-h-full flex flex-col items-center bg-fuchsia-300 w-3/4 sm:w-2/4 border-3 p-3 gap-3 " + animateMenuOpening}>

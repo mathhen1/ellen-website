@@ -11,14 +11,16 @@ const Footer = () => {
 
             <span className="reveal opacity-0 h-px top-0 absolute w-full border-t border-black"></span>
 
-            <div className="flex flex-col w-full">
-                <div className="reveal opacity-0 flex flex-col items-start text-start sm:gap-2 w-full mt-2 border-b p-1 pb-2">
-                    <h1 className="reveal opacity-0 text-black text-base font-black tracking-widest">
+            <div className="flex flex-col lg:flex-row w-full">
+
+                <div className="reveal opacity-0 flex flex-col items-start lg:items-center text-start sm:gap-2 w-full mt-2 max-lg:border-b p-1 pb-2">
+                    <h1 className="reveal opacity-0 text-black text-base lg:text-lg font-black 
+                    tracking-widest lg:tracking-none">
                         Links Rápidos
                     </h1>
 
                     <ul className="reveal opacity-0 text-base sm:text-sm pl-2 font-black tracking-widest
-                    flex flex-col sm:flex-row gap-1 italic">
+                    flex flex-col sm:flex-row gap-1 lg:grid lg:grid-cols-3 italic lg:tracking-none">
                         <li className="reveal opacity-0">
                             <a href="#sobre-mim">-&gt; Sobre mim</a>
                         </li>
@@ -41,13 +43,14 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="reveal opacity-0 flex flex-col items-start text-start gap-1 sm:gap-3 w-full border-b p-1 pb-2">
-                    <h1 className="reveal opacity-0 text-base font-black tracking-widest text-black">
+                <div className="reveal opacity-0 flex flex-col items-start lg:items-center text-start gap-1 sm:gap-3 w-full max-lg:border-b p-1 pb-2">
+                    <h1 className="reveal opacity-0 text-base lg:text-lg font-black 
+                    tracking-widest lg:tracking-none text-black">
                         Meus contatos
                     </h1>
 
                     <ul className="reveal opacity-0 text-sm sm:text-xs pl-2 font-black tracking-wider 
-                    text-fuchsia-950 flex flex-col sm:flex-row gap-2">
+                    text-fuchsia-950 flex flex-col sm:flex-row gap-2 lg:grid lg:grid-cols-2">
 
                         <li className="reveal opacity-0 flex flex-row gap-1 font-semibold">
 
@@ -101,6 +104,7 @@ const Footer = () => {
                     </ul>
 
                 </div>
+
             </div>
 
             <div className="reveal opacity-0 flex w-full flex-col items-center gap-3">
